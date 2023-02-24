@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+* {
+    padding: 0rem;
+    margin: 0rem;
+    box-sizing: border-box;
+}
+
+body, main, .content {
+    transition: .4s;
+}
+
+button:hover {
+    transition: .1s;
+}
+
+@media screen and (max-width: 999px) {
+
+    body {
+        background-color: #f2f2f2;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    main {
+        height: 100vh;
+    }
+
+    div.content {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        width: 350px;
+    }
+
+    img {
+        margin-bottom: 2rem;
+    }
+
+    h1 {
+        font-family: 'Big Shoulders Display', cursive;
+        font-size: 2.4rem;
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+        color: #f2f2f2;
+    }
+
+    p {
+        margin-bottom: 2rem;
+        color: #ffffffbf;
+        font-size: 1em;
+        font-family: 'Lexend Deca', sans-serif;
+        line-height: 1.8rem;
+    }
+
+    button {
+        font-family: 'Lexend Deca', sans-serif;
+        font-size: 1em;
+        padding: 1rem;
+        width: 10rem;
+        border-radius: 2rem;
+        border: none;
+    }
+
+    button:hover {
+        cursor: pointer;
+        background-color: transparent;
+        border: 3px solid white;
+    }
+
+    .sedans {
+        background-color: #e38826;
+        border-radius: .5rem .5rem 0rem 0rem;
+        padding: 3rem;
+    }
+
+    .sedans > button {
+        color: #e38826;
+    }
+
+    .sedans > button:hover {
+        color: white;
+    }
+
+    .suvs {
+        background-color: #006970;
+        padding: 3rem;
+    }
+
+    .suvs > button {
+        color: #006970;
+    }
+
+    .suvs > button:hover {
+        color: white;
+    }
+
+    .luxury {
+        background-color: #004241;
+        border-radius: 0rem 0rem .5rem .5rem;
+        padding: 3rem;
+    }
+
+    .luxury > button {
+        color: #004241;
+    }
+
+    .luxury > button:hover {
+        color: white;
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+
+    body {
+        background-color: #f2f2f2;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    div.content {
+        display: flex;
+        flex-direction: row;
+        height: 33rem;
+        width: 60rem;
+        text-align: left;
+    }
+
+    img {
+        margin-bottom: 2rem;
+    }
+
+    h1 {
+        font-family: 'Big Shoulders Display', cursive;
+        font-size: 2.4rem;
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+        color: #f2f2f2;
+    }
+
+    p {
+        margin-bottom: 5rem;
+        color: #ffffffbf;
+        font-size: 1em;
+        font-family: 'Lexend Deca', sans-serif;
+        line-height: 1.8rem;
+    }
+
+    button {
+        font-family: 'Lexend Deca', sans-serif;
+        font-size: 1em;
+        padding: 1rem;
+        width: 10rem;
+        border-radius: 2rem;
+        border: none;
+    }
+
+    button:hover {
+        cursor: pointer;
+        background-color: transparent;
+        border: 3px solid white;
+    }
+
+    .sedans {
+        background-color: #e38826;
+        border-radius: .5rem 0rem 0rem .5rem;
+        padding: 3rem;
+    }
+
+    .sedans > button {
+        color: #e38826;
+    }
+
+    .sedans > button:hover {
+        color: white;
+    }
+
+    .suvs {
+        background-color: #006970;
+        padding: 3rem;
+    }
+
+    .suvs > button {
+        color: #006970;
+    }
+
+    .suvs > button:hover {
+        color: white;
+    }
+
+    .luxury {
+        background-color: #004241;
+        border-radius: 0rem .5rem .5rem 0rem;
+        padding: 3rem;
+    }
+
+    .luxury > button {
+        color: #004241;
+    }
+
+    .luxury > button:hover {
+        color: white;
+    }
+
+}
