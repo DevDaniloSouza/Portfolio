@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+* {
+    padding: 0px;
+    margin: 0px;
+    transition: .3s;
+}
+
+body {
+    background-color: #f2ebe3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+}
+
+.img {
+    background-image: url(images/image-product-mobile.jpg);
+    background-size: cover;
+    border-radius: .7rem .7rem 0rem 0rem;
+    height: 15rem;
+}
+
+.content {
+    font-family: 'Montserrat', sans-serif;
+    background-color: aliceblue;
+    border-radius: 0rem 0rem .7rem .7rem;
+    padding: 1.5rem;
+    color: hsl(228, 12%, 48%);
+}
+
+.sp1 {
+    display: block;
+    font-size: .8rem;
+    margin-bottom: .5rem;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    color: hsl(212, 21%, 14%);
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1.5rem;
+}
+
+.sp2 {
+    color: #3c8067;
+    font-size: 2em;
+    margin-right: .5rem;
+}
+
+.sp3 {
+    font-size: 0.8em;
+    color: hsl(212, 21%, 14%);
+}
+
+.sp2, .sp3 {
+    font-family: 'Fraunces', serif;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+button > img {
+    margin-right: .4rem;
+}
+
+button {
+    background-color: #3c8067;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: aliceblue;
+    border-radius: 0.5rem;
+    border: none;
+    display: block;
+    margin: auto;
+    margin-bottom: 1rem;
+    width: 300px;
+    height: 45px;
+}
+
+button:hover {
+    background-color: #214638;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1200px) {
+
+    body {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        min-width: 40rem;
+    }
+    
+    .img {
+        background-image: url(images/image-product-desktop.jpg);
+        border-radius: .7rem 0rem 0rem .7rem;
+        width: 55%;
+        height: 30rem;
+    }
+    
+    .content {
+        border-radius: 0rem .7rem .7rem 0rem;
+        padding: 2rem;
+        width: 45%;
+        height: 26rem;
+    }
+    
+    .sp1 {
+        margin-bottom: 1rem;
+    }
+    
+    h1 {
+        margin-bottom: 1.5rem;
+        padding-right: 2rem;
+    }
+    
+    p {
+        line-height: 1.4rem;
+    }
+    
+    .sp2, .sp3 {
+        margin-bottom: 2rem;
+    }
+    
+    button {
+        width: 250px;
+        height: 50px;
+        margin-bottom: 0rem;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+}

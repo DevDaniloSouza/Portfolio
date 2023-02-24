@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #090b1a;
+}
+
+main {
+    transition: 400ms;
+}
+
+@media screen and (max-width: 699px) {
+    
+    .container {
+        background-color: #1b1938;
+        border-radius: 10px;
+        margin: 20px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-content: flex-start;
+        max-width: 350px;
+    }
+
+    img {
+        border-radius: 10px 10px 0px 0px;
+        width: 100%;
+    }
+
+    .content {
+        color: white;
+        text-align: center;
+        padding: 3px;
+        font-family: 'Inter', sans-serif;
+    }
+
+    h1 {
+        font-size: 2em;
+        padding: 15px;
+    }
+
+    h1 > strong {
+        color: #aa5cdb;
+    }
+
+    div.content > p {
+        color: #ffffffbf;
+        padding: 0px 27px 0px 27px;
+        margin-bottom: 2.5em;
+        line-height: 1.5em;
+    }
+
+    div.block {
+        font-family: 'Lexend Deca', sans-serif;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .blocks {
+        margin-bottom: 2em;
+    }
+
+    .blocks > p {
+        color: #ffffff99;
+        font-size: 0.8em;
+        text-transform: uppercase;
+    }
+
+}
+
+@media screen and (min-width: 700px) and (max-width: 1199px) {
+    
+    .container {
+        background-color: #1b1938;
+        border-radius: 10px;
+        margin: 20px;
+        display: flex;
+        flex-direction: column-reverse;
+        align-content: flex-start;
+        max-width: 500px;
+    }
+
+    img {
+        border-radius: 10px 10px 0px 0px;
+        width: 100%;
+    }
+
+    .content {
+        color: white;
+        text-align: center;
+        font-family: 'Inter', sans-serif;
+        flex-direction: column;
+        align-content: space-around;
+        padding: 1.5em;
+    }
+
+    h1 {
+        font-size: 2em;
+        margin-bottom: 0.5em;
+    }
+
+    h1 > strong {
+        color: #aa5cdb;
+    }
+
+    div.content > p {
+        color: #ffffffbf;
+        margin-bottom: 2.5em;
+        line-height: 1.5em;
+    }
+
+    div.block {
+        font-family: 'Lexend Deca', sans-serif;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .blocks {
+        margin-bottom: 2em;
+    }
+
+    .blocks > p {
+        color: #ffffff99;
+        font-size: 0.8em;
+        text-transform: uppercase;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    
+    .container {
+        background-color: #1b1938;
+        border-radius: 10px;
+        margin: 20px;
+        display: flex;
+        flex-direction: row;
+        max-width: 62.5rem;
+        max-height: 25rem;
+    }
+
+    img {
+        border-radius: 0px 10px 10px 0px;
+        width: 100%;
+        height: 400px;
+    }
+
+    .img {
+        
+        height: 100%;
+        width: 600px;
+    }
+
+    .content {
+        display: flex;
+        color: white;
+        text-align: left;
+        font-family: 'Inter', sans-serif;
+        flex-direction: column;
+        width: 50%;
+        justify-content: center;
+        align-content: center;
+        padding-left: 4em;
+    }
+
+    h1 {
+        font-size: 2em;
+        padding-right: 2em;
+        margin-bottom: 0.8em;
+    }
+
+    h1 > strong {
+        color: #aa5cdb;
+    }
+
+    div.content > p {
+        color: #ffffffbf;
+        padding-right: 4em;
+        margin-bottom: 4em;
+        line-height: 1.5em;
+    }
+
+    div.block {
+        font-family: 'Lexend Deca', sans-serif;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+
+    .blocks {
+        margin-right: 4em;
+    }
+
+    .blocks > p {
+        color: #ffffff99;
+        font-size: 0.8em;
+        text-transform: uppercase;
+    }
+
+}
