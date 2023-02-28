@@ -5,6 +5,16 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Red Hat Display', sans-serif;
+    transition: .3s;
+}
+
+@media screen and (max-width: 400px) {
+
+    body {
+        background-image: url(images/pattern-background-mobile.svg);
+        background-repeat: no-repeat;
+    }
+    
 }
 
 body {
@@ -13,7 +23,7 @@ body {
     align-items: center;
     height: 100vh;
     background-color: #e0e8ff;
-    background-image: url(images/pattern-background-mobile.svg);
+    background-image: url(images/pattern-background-desktop.svg);
     background-repeat: no-repeat;
     padding: 1rem;
     color: hsl(224, 23%, 55%);
