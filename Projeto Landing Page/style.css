@@ -236,7 +236,8 @@ footer {
 @media screen and (max-width: 900px) {
 
     body {
-        background-image: url(images/bg-header-mobile.png);
+        background-image: url(images/bg-header-desktop.png);
+        background-position: top center;
         }
       
       header > h1 {
