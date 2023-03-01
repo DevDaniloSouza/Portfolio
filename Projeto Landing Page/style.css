@@ -337,6 +337,7 @@ footer {
         min-height: 1rem;
         margin-bottom: 3rem;
         text-align: center;
+        translate: 0% 0%;
       }
       
       .links > a {
