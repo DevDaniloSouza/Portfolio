@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    background-color: aliceblue;
+    font-size: 13px;
+}
+
+main {
+    max-width: 1100px;
+    display: grid;
+    grid-gap: 1.5rem;
+    grid-template-areas:
+    "Daniel Daniel Jonathan Kira"
+    "Jeanette Patrick Patrick Kira";
+}
+
+main > div {
+    padding: 1.5rem;
+    border-radius: .5rem;
+    box-shadow: 0px 5px 25px #b9b9b9ce;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.daniel > .profile > div > h3, .jonathan > .profile > div > h3, .patrick > .profile > div > h3{
+    color: #cfcfcf;
+}
+
+.daniel > .profile > div > p, .jonathan > .profile > div > p, .patrick > .profile > div > p {
+    color: #cfcfcf94;
+}
+
+.daniel > h2, .jonathan > h2, .patrick > h2 {
+    color: #cfcfcf;
+}
+
+.daniel > p, .jonathan > p, .patrick > p {
+    color: #cfcfcf8c;
+}
+
+.jeanette, .kira {
+    color: #48556ac5;
+}
+
+.jeanette > h2, .kira > h2 {
+    color: #48556a;
+}
+
+.jeanette > .profile > div > h3, .kira > .profile > div > h3 {
+    color: #48556a;
+}
+
+.kira {
+    width: 15rem;
+}
+
+.jonathan {
+    width: 18rem;
+}
+
+.jeanette {
+    width: 15rem;
+}
+
+img {
+    width: 2.5rem;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+h2 {
+    margin-bottom: 1rem;
+}
+
+.daniel {
+    grid-area: Daniel;
+    background-color: #7544c5;
+}
+
+.jonathan {
+    grid-area: Jonathan;
+    background-color: #48556a;
+}
+
+.kira {
+    grid-area: Kira;
+    background-color: white;
+}
+
+.jeanette {
+    grid-area: Jeanette;
+    background-color: white;
+}
+
+.patrick {
+    grid-area: Patrick;
+    background-color: #19212e;
+}
