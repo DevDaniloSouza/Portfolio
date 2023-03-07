@@ -1,4 +1,306 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;@700&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
 
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: .3s;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    background-color: hsl(211, 100%, 96%);
+    font-size: 16px;
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    width: 85%;
+    margin: 1.5rem 0 5rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: hsl(192, 100%, 9%);
+}
+
+header > img {
+    width: 35%;
+}
+
+header > button {
+    width: 30%;
+    height: 2rem;
+    border-radius: 2rem;
+    color: hsl(321, 100%, 78%);
+    border: 2px solid hsl(321, 100%, 78%);
+}
+
+header > button:hover {
+    border: 2px solid hsl(322, 100%, 66%);
+    color: hsl(322, 100%, 66%);
+    cursor: pointer;
+}
+
+main {
+    color: hsl(192, 100%, 9%);
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content0 {
+    width: 85%;
+    text-align: center;
+}
+
+.content0 > h1 {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.content0 > p {
+    margin-bottom: 2.5rem;
+}
+
+.content0 > button {
+    background-color: hsl(322, 100%, 66%);
+    border-radius: 2rem;
+    border: none;
+    margin-bottom: 5rem;
+    height: 3rem;
+    width: 15rem;
+    color: white;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+.content0 > button:hover {
+    background-color: hsl(321, 100%, 78%);
+    cursor: pointer;
+}
+
+.content1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main > img {
+    width: 85%;
+    margin-bottom: 5rem;
+}
+
+.data {
+    margin-bottom: 3rem;
+}
+
+.data > img {
+    width: 2rem;
+}
+
+.data > h1 {
+    font-size: 4rem;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+.data > p:last-child {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.content2 {
+    text-align: center;
+    width: 85%;
+    margin-bottom: 10rem;
+}
+
+.content2 > img {
+    width: 80%;
+    margin-bottom: 3rem;
+}
+
+.content2 > h2 {
+    margin-bottom: 1rem;
+}
+
+.content3 {
+    text-align: center;
+    width: 85%;
+    margin-bottom: 10rem;
+}
+
+.content3 > img {
+    width: 80%;
+    margin-bottom: 3rem;
+}
+
+.content3 > h2 {
+    margin-bottom: 1rem;
+}
+
+.content4 {
+    text-align: center;
+    width: 85%;
+    margin-bottom: 10rem;
+}
+
+.content4 > img {
+    width: 80%;
+    margin-bottom: 3rem;
+}
+
+.content4 > h2 {
+    margin-bottom: 1rem;
+}
+
+.content5 {
+    text-align: center;
+    width: 85%;
+    margin-bottom: 10rem;
+}
+
+.content5 > h1 {
+    margin-bottom: 2rem;
+}
+
+.content5 > button {
+    background-color: hsl(322, 100%, 66%);
+    border-radius: 2rem;
+    border: none;
+    margin-bottom: 5rem;
+    height: 3rem;
+    width: 15rem;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.content5 > button:hover {
+    background-color: hsl(321, 100%, 78%);
+    cursor: pointer;
+}
+
+footer {
+    background-color: hsl(192, 100%, 9%);
+    padding: 1.5em;
+    color: aliceblue;
+}
+
+body > img {
+    width: 100%;
+}
+
+footer > h2 {
+    margin-bottom: 1.2rem;
+}
+
+footer > p {
+    margin-bottom: 1.5rem;
+}
+
+footer > input {
+    display: block;
+    width: 100%;
+    height: 2.8rem;
+    border-radius: .5rem;
+    border: none;
+    margin-bottom: 1rem;
+}
+
+footer > div {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+footer > div > button {
+    background-color: hsl(322, 100%, 66%);
+    width: 50%;
+    height: 2.8rem;
+    border-radius: .3rem;
+    border: none;
+    color: aliceblue;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 5rem;
+}
+
+footer > div > button:hover {
+    background-color: hsl(321, 100%, 78%);
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.contact > img {
+    margin-right: 1rem;
+}
+
+@media screen and (min-width: 900px) {
+    
+    header > img {
+        width: 15%;
+    }
+    
+    header > button {
+        width: 10%;
+    }
+
+    .content0 > h1 {
+        font-size: 2rem;
+    }
+    
+    .content0 > p {
+        margin: auto;
+        margin-bottom: 2.5rem;
+        width: 30rem;
+    }
+
+    main > img {
+        width: 76%;
+    }
+  
+    .content1 {
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .content2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: center;
+        width: 80%;
+        margin-bottom: 10rem;
+    }
+    
+    .content2 > img {
+        width: 40%;
+        margin-bottom: 3rem;
+    }
+    
+    .content2 > h2 {
+        margin-bottom: 1rem;
+    }
+
+}
