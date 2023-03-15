@@ -130,7 +130,7 @@ main > img {
     margin-bottom: 3rem;
 }
 
-.content2 > h2 {
+.content2 > div > h2 {
     margin-bottom: 1rem;
 }
 
@@ -145,7 +145,7 @@ main > img {
     margin-bottom: 3rem;
 }
 
-.content3 > h2 {
+.content3 > div > h2 {
     margin-bottom: 1rem;
 }
 
@@ -160,7 +160,7 @@ main > img {
     margin-bottom: 3rem;
 }
 
-.content4 > h2 {
+.content4 > div > h2 {
     margin-bottom: 1rem;
 }
 
@@ -287,20 +287,137 @@ footer > div > button:hover {
 
     .content2 {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        text-align: center;
+        flex-direction: row-reverse;
+        flex-wrap: nowrap;
         width: 80%;
         margin-bottom: 10rem;
     }
     
-    .content2 > img {
-        width: 40%;
+    div.img {
+        width: 120%;
         margin-bottom: 3rem;
     }
+
+    div.img > img {
+        width: 100%;
+    }
     
-    .content2 > h2 {
+    .content2 > div > h2 {
         margin-bottom: 1rem;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .content2 > div {
+        align-self: center;
+        text-align: left;
+        height: 100%;
+        padding-right: 1rem;
+    }
+
+    .content3 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 80%;
+        margin-bottom: 10rem;
+    }
+    
+    .content3 > div > h2 {
+        margin-bottom: 1rem;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .content3 > div {
+        align-self: center;
+        text-align: left;
+        padding-left: 1rem;
+        height: 100%;
+    }
+
+    .content4 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        width: 80%;
+        margin-bottom: 10rem;
+    }
+    
+    .content4 > div > h2 {
+        margin-bottom: 1rem;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .content4 > div {
+        align-self: center;
+        text-align: left;
+        padding-left: 1rem;
+        height: 100%;
+    }
+
+    footer {
+        background-color: hsl(192, 100%, 9%);
+        width: 100%;
+        padding: 1.5em;
+        color: aliceblue;
+    }
+    
+    body > img {
+        width: 100%;
+    }
+    
+    footer > h2 {
+        margin-bottom: 1.2rem;
+    }
+    
+    footer > p {
+        margin-bottom: 1.5rem;
+    }
+    
+    footer > input {
+        display: block;
+        width: 100%;
+        height: 2.8rem;
+        border-radius: .5rem;
+        border: none;
+        margin-bottom: 1rem;
+    }
+    
+    footer > div {
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+    }
+    
+    footer > div > button {
+        background-color: hsl(322, 100%, 66%);
+        width: 50%;
+        height: 2.8rem;
+        border-radius: .3rem;
+        border: none;
+        color: aliceblue;
+        font-size: 1rem;
+        font-family: 'Open Sans', sans-serif;
+        margin-bottom: 5rem;
+    }
+    
+    footer > div > button:hover {
+        background-color: hsl(321, 100%, 78%);
+    }
+    
+    .contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 1.5rem;
+    }
+    
+    .contact > img {
+        margin-right: 1rem;
     }
 
 }
