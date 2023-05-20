@@ -10,7 +10,7 @@ body {
     align-items: center;
     height: 100vh;
     width: 100vw;
-    background-image: linear-gradient(to right, #fad643, #926c15);
+    background-image: linear-gradient(to right, #fcda55, #866414);
 }
 
 div.container {
@@ -18,8 +18,8 @@ div.container {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-image: linear-gradient(to right, #926c15, #fad643);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.527);
+    background-image: linear-gradient(to right, #a87e1b, #fad643);
+    box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.397);
     border-radius: .3rem;
     padding: 1rem;
 }
