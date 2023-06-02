@@ -13,7 +13,7 @@
     --yellow: #FCBA04;
     --light-blue: #23b0cf;
     --white: #e6eedd;
-    --dark-yellow: #A44200;
+    --brown: #A44200;
 }
 
 body {
@@ -153,7 +153,7 @@ div.projetos {
 div.line {
     padding: 1rem;
     border-radius: .8rem;
-    border: .3rem solid var(--dark-yellow);
+    border: .3rem solid var(--brown);
 }
 
 .line > h3 {
