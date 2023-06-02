@@ -10,7 +10,7 @@ body {
     align-items: center;
     height: 100vh;
     width: 100vw;
-    background-image: linear-gradient(to right, #fcda55, #866414);
+    background-image: linear-gradient(to right, #A44200, #FCBA04);
 }
 
 div.container {
@@ -18,7 +18,7 @@ div.container {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-image: linear-gradient(to right, #a87e1b, #fad643);
+    background-image: linear-gradient(to right, #FCBA04, #A44200);
     box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.397);
     border-radius: .3rem;
     padding: 1rem;
