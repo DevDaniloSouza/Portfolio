@@ -19,7 +19,7 @@
 body {
     height: 100vh;
     width: 100%;
-    background-color: var(--white);
+    background-color: #e6eedd;
     font-family: 'Geologica', sans-serif;
 }
 
@@ -33,6 +33,7 @@ header {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    width: 100%;
 }
 
 img.me {
@@ -111,17 +112,18 @@ div.socials > div > a:active {
 }
 
 main {
-    padding: 1rem;
-
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
+
+    padding: 1rem;
+    gap: 1rem;
 }
 
 div.tecs {
     max-height: 6.5rem;
     width: 28rem;
-    padding: .6rem;
+    padding: .9rem;
     background-color: var(--light-blue);
     box-shadow: 0px 0px 1rem #2525256b;
     border-radius: .8rem;
@@ -139,10 +141,13 @@ img.tec {
 }
 
 div.about {
-    width: 17rem;
-    padding: .8rem;
+    padding: 1rem;
+    max-width: 28rem;
+    margin-top: 1rem;
     box-shadow: 0px 0px 1rem #25252575;
     border-radius: .8rem;
+    background-color: var(--yellow);
+    color: var(--black);
 }
 
 div.boxes {
@@ -155,7 +160,9 @@ div.boxes {
 }
 
 div.box {
-    padding: .8rem;
+    width: 17rem;
+    height: 10rem;
+    padding: 1rem;
     border-radius: .8rem;
     box-shadow: 0px 0px 1rem #25252575;
 }
