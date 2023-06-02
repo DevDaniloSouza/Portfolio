@@ -16,6 +16,10 @@
     --brown: #A44200;
 }
 
+span, h1, h2, h3, p {
+    cursor: default;
+}
+
 body {
     height: 100vh;
     width: 100%;
