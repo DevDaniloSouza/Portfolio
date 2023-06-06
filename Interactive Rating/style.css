@@ -92,3 +92,7 @@ p {
     color: hsl(25, 97%, 53%);
     cursor: pointer;
 }
+
+.rated {
+    background-color: #fb7413;
+}
