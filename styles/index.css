@@ -17,9 +17,13 @@
     --purple-shadow: #8618e05b;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
     width: 100%;
-    height: 100vh;
+    height: 100%;
 
     background-color: var(--white);
 
@@ -50,6 +54,14 @@ div.nav {
 
     margin-right: 1rem;
     width: 19rem;
+}
+
+a.nav {
+    color: var(--white);
+}
+
+a.nav:hover {
+    color: var(--purple);
 }
 
 header {
@@ -225,7 +237,7 @@ div#tecs {
     margin: 0 0 .4rem 0;
 }
 
-#project-02 > p {
+.project-art > p {
     color: var(--whiteTrans);
 }
 
