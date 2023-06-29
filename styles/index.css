@@ -120,6 +120,7 @@ section.first-sec {
     justify-content: center;
 
     padding: 2rem;
+    width: 50%;
 }
 
 #about {
@@ -197,6 +198,7 @@ div#tecs {
     align-items: center;
 
     padding: 1rem;
+    width: 50%;
 
     background-color: var(--black);
     color: var(--white);
@@ -224,6 +226,7 @@ div#tecs {
 
 #project-01 > p {
     color: var(--whiteTrans);
+    max-width: 30rem;
 }
 
 #project-02 {
@@ -238,6 +241,10 @@ div#tecs {
 #project-02 > h2 {
     font-size: 1.6rem;
     margin: 0 0 .4rem 0;
+}
+
+#project-02 > p {
+    max-width: 30rem;
 }
 
 .project-art > p {
