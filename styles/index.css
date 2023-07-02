@@ -52,11 +52,12 @@ div.nav {
     justify-content: space-between;
 
     margin-right: 1rem;
-    width: 19rem;
+    width: 18rem;
 }
 
 a.nav {
     color: var(--white);
+    font-size: 1.1rem;
 }
 
 a.nav:hover {
@@ -164,7 +165,7 @@ div#tecs {
 .tecs-rows {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 
     width: 100%;
 }
@@ -172,6 +173,7 @@ div#tecs {
 .back-tecs {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 
     margin-bottom: 2rem;
@@ -179,7 +181,7 @@ div#tecs {
     padding: 1rem;
 
     background-color: var(--blackLight);
-    border-radius: .8rem;
+    border-radius: rem;
 
     color: var(--white);
 }
@@ -319,8 +321,9 @@ img.project:hover {
     width: 25rem;
 }
 
-.project-art > .project {
-    width: 25rem;
+.project-art > a > img.project {
+    max-width: 100%;
+    min-width: 50%;
 }
 
 .project > h2 {
