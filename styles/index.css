@@ -13,7 +13,7 @@
     --whiteTrans: #e8ebf3d2;
     --shadow: #15151570;
     --purple: #8618e0;
-    --purple-shadow: #8618e05b;
+    --purple-shadow: #8618e046;
 }
 
 html {
@@ -36,14 +36,15 @@ nav {
     align-items: center;
 
     position: fixed;
-    padding: .3rem;
+    padding: .2rem;
     width: 100%;
 
     background-color: var(--black);
 
     color: var(--white);
     font-size: 1.05rem;
-    font-family: 'Belanosima';
+    font-family: 'Jost';
+    font-weight: 500;
 }
 
 div.nav {
@@ -51,13 +52,14 @@ div.nav {
     flex-direction: row;
     justify-content: space-between;
 
-    margin-right: 1rem;
-    width: 18rem;
+    margin-right: 1.2rem;
+    width: 17rem;
 }
 
 a.nav {
     color: var(--white);
-    font-size: 1.1rem;
+    font-size: 1.05rem;
+    font-weight: 400;
 }
 
 a.nav:hover {
@@ -256,7 +258,7 @@ div#tecs {
 img.project {
     width: 25.5rem;
 
-    box-shadow: 0 0 .8rem #8618e09c;
+    box-shadow: 0 0 .8rem #8618e071;
     transition: .2s;
 }
 
