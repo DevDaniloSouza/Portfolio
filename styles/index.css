@@ -12,7 +12,8 @@
     --white: #e8ebf3;
     --whiteTrans: #e8ebf3d2;
     --shadow: #15151570;
-    --purple: #8618e0;
+    --purple: #912fe0;
+    --linkPurple: #b254ff;
     --purple-shadow: #8618e046;
 }
 
@@ -63,7 +64,7 @@ a.nav {
 }
 
 a.nav:hover {
-    color: var(--purple);
+    color: var(--linkPurple);
 }
 
 header {
@@ -292,6 +293,7 @@ img.project:hover {
     align-items: center;
 
     width: 100%;
+    padding-bottom: 2rem;
 
     background-color: var(--black);
 
