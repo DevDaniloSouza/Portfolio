@@ -327,7 +327,7 @@ img.project:hover {
 
 .project-art > a > img.project {
     max-width: 100%;
-    min-width: 50%;
+    min-width: 45%;
 }
 
 .project > h2 {
