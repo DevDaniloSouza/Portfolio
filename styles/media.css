@@ -1,0 +1,105 @@
+@media screen and (max-width: 480px) {
+    :root {
+        --blackLight: #1f1f1f59;
+        --black: #151515;
+        --white: #e8ebf3;
+        --whiteTrans: #e8ebf3d2;
+        --shadow: #15151570;
+        --purple: #912fe0;
+        --linkPurple: #b254ff;
+        --purple-shadow: #8618e046;
+    }
+    
+    nav {
+        display: none;
+    }
+    
+    header {
+        height: 26rem;
+    }
+    
+    section.first-sec {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .about-me {
+        display: flex;
+        justify-content: center;
+    
+        padding: 1rem;
+        width: 90%;
+    }
+    
+    #about {
+        width: 100%;
+        padding: 1rem;
+    }
+    
+    div#tecs {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .tecs-rows {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    
+        width: 50%;
+    }
+    
+    .back-tecs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+        margin-bottom: 2rem;
+        width: 6rem;
+        height: 6rem;
+    }
+    
+    .tecs {
+        width: 6rem;
+    }
+    
+    #css {
+        width: 4.5rem;
+    }
+    
+    .projects {
+        width: 90%;
+    }
+
+    img.project {
+        width: 65vw;
+    }
+    
+    .parallax {
+        text-align: center;
+        font-size: 1rem;
+        width: 100%;
+    }
+    
+    .second-sec {
+        width: 100%;
+        padding-bottom: 0rem;
+    }
+    
+    .projects-02 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        width: 95%;
+        margin: 0 0 0rem 0;
+    }
+    
+    .project-art {
+        margin: 0 0 4rem 0;
+        width: 80vw;
+    }
+}

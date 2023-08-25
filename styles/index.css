@@ -7,7 +7,7 @@
 }
 
 :root {
-    --blackLight: #1f1f1fd3;
+    --blackLight: #1f1f1f59;
     --black: #151515;
     --white: #e8ebf3;
     --whiteTrans: #e8ebf3d2;
@@ -106,10 +106,6 @@ span#skill {
     font-size: 1.5rem;
 }
 
-main {
-    box-shadow: 0 0 .8rem var(--shadow);
-}
-
 section.first-sec {
     display: flex;
     flex-direction: row;
@@ -179,14 +175,14 @@ div#tecs {
     justify-content: center;
     align-items: center;
 
-    margin-bottom: 2rem;
-    width: 10rem;
+    margin-bottom: 3rem;
+    width: 8rem;
+    height: 8rem;
     padding: 1rem;
 
-    background-color: var(--blackLight);
-    border-radius: rem;
-
-    color: var(--white);
+    background-color: var(--white);
+    border-radius: .8rem;
+    box-shadow: 7px 7px 32px var(--blackLight);
 }
 
 .tecs {
@@ -374,8 +370,6 @@ a:active {
     display: flex;
     flex-direction: row;
     align-items: center;
-
-    font-size: 1.2rem;
 }
 
 .contact-icons {
