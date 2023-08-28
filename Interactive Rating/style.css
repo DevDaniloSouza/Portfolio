@@ -54,11 +54,11 @@ p {
 }
 
 .btn {
-    color: rgba(255, 255, 255, 0.671);
+    color: #ffffffab;
     font-size: 1em;
     font-weight: 700;
     border: none;
-    background-color: rgba(255, 255, 255, 0.096);
+    background-color: #ffffff18;
     height: 2.7rem;
     width: 2.7rem;
     border-radius: 50%;
@@ -82,7 +82,7 @@ p {
 
 .btn:hover {
     transition: .3s;
-    background-color: rgba(255, 255, 255, 0.452);
+    background-color: #ffffff73;
     cursor: pointer;
 }
 
