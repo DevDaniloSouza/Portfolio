@@ -1,15 +1,5 @@
 @media screen and (max-width: 480px) {
-    :root {
-        --blackLight: #1f1f1f59;
-        --black: #151515;
-        --white: #e8ebf3;
-        --whiteTrans: #e8ebf3d2;
-        --shadow: #15151570;
-        --purple: #912fe0;
-        --linkPurple: #b254ff;
-        --purple-shadow: #8618e046;
-    }
-    
+
     nav {
         display: none;
     }
@@ -71,7 +61,12 @@
     }
     
     .projects {
-        width: 91%;
+        padding: 0rem;
+        width: 100%;
+    }
+
+    .projects > h1 {
+        margin: 1rem 0 1.2rem;
     }
 
     img.project {
@@ -89,7 +84,7 @@
     }
     
     .second-sec {
-        width: 100%;
+        width: 100vw;
         padding-bottom: 0rem;
     }
     
@@ -98,7 +93,7 @@
         flex-direction: column;
         align-items: center;
     
-        width: 95%;
+        width: 100%;
         margin: 0 0 0rem 0;
     }
     

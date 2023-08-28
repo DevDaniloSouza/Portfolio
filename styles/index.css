@@ -211,41 +211,27 @@ div#tecs {
     font-size: 2.5rem;
 }
 
-#project-01 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    text-align: center;
-    margin: 0 0 3rem 0;
-}
-
-#project-01 > h2 {
-    font-size: 1.6rem;
-    margin: 0 0 .4rem 0;
-}
-
-#project-01 > p {
-    color: var(--whiteTrans);
-    max-width: 30rem;
-}
-
+#project-01,
 #project-02 {
     display: flex;
     flex-direction: column;
     align-items: center;
 
     text-align: center;
-    margin: 0 0 1rem 0;
+    margin: 0 0 2rem 0;
 }
 
+#project-01 > h2,
 #project-02 > h2 {
     font-size: 1.6rem;
     margin: 0 0 .4rem 0;
 }
 
+#project-01 > p,
 #project-02 > p {
+    color: var(--whiteTrans);
     max-width: 30rem;
+    padding: 0 1rem;
 }
 
 .project-art > p {
