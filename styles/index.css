@@ -36,9 +36,7 @@ nav {
     justify-content: space-between;
     align-items: center;
 
-    position: fixed;
     padding: .2rem;
-    width: 100%;
 
     background-color: var(--black);
 
