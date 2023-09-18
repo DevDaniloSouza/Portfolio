@@ -237,8 +237,9 @@ div#tecs {
 }
 
 img.project {
-    width: 29vw;
+    width: 28vw;
 
+    border-radius: 1rem;
     box-shadow: 0 0 .8rem #8618e071;
     transition: .2s;
 }
