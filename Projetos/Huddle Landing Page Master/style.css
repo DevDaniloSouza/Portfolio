@@ -13,8 +13,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'Open Sans', sans-serif;
+
+    width: 100%;
     background-color: hsl(211, 100%, 96%);
+
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
 }
 
