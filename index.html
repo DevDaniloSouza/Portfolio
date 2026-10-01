@@ -1,127 +1,370 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Danilo Souza | Portfólio</title>
-    <link rel="stylesheet" href="styles/index.css">
-    <link rel="stylesheet" href="styles/media.css">
-    <link rel="shortcut icon" href="styles/imagens/favicon.png" type="image/x-icon">
-</head>
-<body>
-    <nav>
-        <div>DevDaniloSouza</div>
-        <div class="nav">
-            <span><a class="nav" href="#begin">Início</a></span>
-            <span><a class="nav" href="#sec-01">Sobre</a></span>
-            <span><a class="nav" href="#project-section">Projetos</a></span>
-        </div>
-    </nav>
-    <header id="begin">
-        <div class="header-text">
-            <p id="hello"><span id="ola">Olá,</span> eu <br>sou <span id="me">Danilo Souza</span></p>
-            <p><span id="skill">Desenvolvedor Front End</span></p>
-        </div>
-    </header>
-    <main>
-        <section id="sec-01" class="first-sec">
-            <article class="about-me">
-                <div id="about">
-                    <h1>Sobre mim</h1>
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Portfólio de Danilo Souza — estudante de Engenharia de Software e desenvolvedor Full Stack."/>
+        <meta name="theme-color" content="#0b0b0b" />
+        <meta property="og:title" content="Danilo Souza — Software Developer" />
+        <meta property="og:description" content="Portfólio profissional de Danilo Souza." />
+        <title>DevDaniloSouza | Software Developer</title>
+        <link rel="shortcut icon" href="styles/imagens/icons/favicon.png" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+            rel="stylesheet"/>
+        <link rel="stylesheet" href="styles/index.css" />
+    </head>
+    <body>
+        <div class="cursor-glow" aria-hidden="true"></div>
 
-                    <p>Me chamo Danilo P. Souza, tenho 21 anos e estou a procura de um trabalho como desenvolvedor. Estou estudando desenvolvimento FullStack, mas ainda estou aprofundando meus conhecimentos em <span class="skills-text">Front-End</span>.</p>
-                                        
-                    <p>Meus conhecimentos atuais incluem <span class="skills-text">HTML5</span>, <span class="skills-text">CSS3</span>, <span class="skills-text">JavaScript</span> (intermediário), <span class="skills-text">TypeScript</span>, <span class="skills-text">React</span>, <span class="skills-text">Sass</span> e <span class="skills-text">Boostrap</span>, sempre estudando para melhorar minhas habilidades e aprimorar meus conhecimentos. Aqui no meu portfólio você pode ver alguns dos projetos feitos por mim, utilizando essas tecnologias.</p>
+        <header class="header" id="header">
+            <nav class="nav container" aria-label="Navegação principal">
+                <a class="brand" href="#home" aria-label="Danilo Souza - início">
+                    <span>DS</span>
+                </a>
 
-                    <h2>Minhas Skills e Tecnologias</h2>
-                    <div id="tecs">
-                        <div class="tecs-rows">
-                            <div class="back-tecs">
-                                <img class="tecs" src="styles/imagens/icons/html-icon.png" alt="HTML Icon">
-                            </div>
-                            <div class="back-tecs">
-                                <img id="css" class="tecs" src="styles/imagens/icons/css-icon.png" alt="CSS Icon">
-                            </div>
-                            <div class="back-tecs">
-                                <img class="tecs" id="js" src="styles/imagens/icons/javascript-icon.png" alt="JavaScript Icon">
-                            </div>
+                <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+                    <span></span><span></span>
+                </button>
+
+                <div class="nav-links" id="navLinks">
+                    <a href="#sobre">Sobre</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projetos">Projetos</a>
+                    <a href="#experiencia">Experiência</a>
+                    <a href="#formacao">Formação</a>
+                    <a href="#contato" class="nav-cta">Contato</a>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero container" id="home">
+                <div class="hero-copy reveal">
+                    <div class="availability"><span></span> Aberto a oportunidades</div>
+
+                    <p class="eyebrow">ENGENHARIA DE SOFTWARE · BRASIL</p>
+
+                    <h1>Construindo ideias<br /><em>em código.</em></h1>
+
+                    <p class="hero-text">
+                        Sou estudante de Engenharia de Software e desenvolvedor em formação, focado em criar
+                        experiências web modernas, funcionais e bem estruturadas.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#projetos" class="button button-primary">Ver projetos <span>↗</span></a>
+                        <a href="#contato" class="button button-ghost">Vamos conversar</a>
+                    </div>
+
+                    <div class="hero-meta">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>TypeScript</span>
+                        <span>Python</span><span>MySQL</span>
+                    </div>
+                </div>
+
+                <div class="hero-visual reveal">
+                    <div class="code-window">
+                        <div class="window-bar">
+                            <div class="dots"><i></i><i></i><i></i></div>
+                            <span>danilosouza.dev</span>
                         </div>
-                        <div class="tecs-rows">
-                            <div class="back-tecs">
-                                <img class="tecs" src="styles/imagens/icons/react-icon.png" alt="React Icon">
+                        <div class="code-body">
+                            <div>
+                                <span class="line">01</span><span class="pink">const</span>
+                                <span class="blue">developer</span> = {
                             </div>
-                            <div class="back-tecs">
-                                <img class="tecs" id="ts" src="styles/imagens/icons/typescript-icon.png" alt="TypeScript Icon">
+                            <div>
+                                <span class="line">02</span>&nbsp;&nbsp;<span class="green">name</span>:
+                                <span class="orange">'Danilo Souza'</span>,
                             </div>
-                            <div class="back-tecs">
-                                <img class="tecs" src="styles/imagens/icons/sass.png" alt="Booststrap Icon">
+                            <div>
+                                <span class="line">03</span>&nbsp;&nbsp;<span class="green">focus</span>:
+                                <span class="orange">'Full Stack'</span>,
                             </div>
+                            <div><span class="line">04</span>&nbsp;&nbsp;<span class="green">learning</span>: [</div>
+                            <div>
+                                <span class="line">05</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="orange">'React'</span>,
+                                <span class="orange">'Node.js'</span>,
+                            </div>
+                            <div>
+                                <span class="line">06</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="orange">'Python'</span
+                                >, <span class="orange">'APIs'</span>
+                            </div>
+                            <div><span class="line">07</span>&nbsp;&nbsp;],</div>
+                            <div>
+                                <span class="line">08</span>&nbsp;&nbsp;<span class="green">mindset</span>:
+                                <span class="orange">'build & learn'</span>
+                            </div>
+                            <div><span class="line">09</span>};</div>
+                            <div><span class="line">10</span></div>
+                            <div>
+                                <span class="line">11</span><span class="pink">while</span> (<span class="blue"
+                                    >true</span
+                                >) {
+                            </div>
+                            <div>
+                                <span class="line">12</span>&nbsp;&nbsp;<span class="blue">developer</span>.learn();
+                            </div>
+                            <div>
+                                <span class="line">13</span>&nbsp;&nbsp;<span class="blue">developer</span>.build();
+                            </div>
+                            <div><span class="line">14</span>}</div>
+                        </div>
+                    </div>
+                    <div class="visual-note note-one">01 / criatividade</div>
+                    <div class="visual-note note-two">02 / tecnologia</div>
+                </div>
+            </section>
+
+            <div class="ticker" aria-hidden="true">
+                <div class="ticker-track">
+                    <span>SOFTWARE</span><b>✦</b><span>FULL STACK</span><b>✦</b><span>WEB DEVELOPMENT</span><b>✦</b>
+                    <span>JAVASCRIPT</span><b>✦</b><span>TYPESCRIPT</span><b>✦</b><span>REACT</span><b>✦</b>
+                    <span>PYTHON</span><b>✦</b><span>PHP</span><b>✦</b><span>MYSQL</span><b>✦</b>
+                    <span>DATABASE</span><b>✦</b><span>FRAMEWORKS</span><b>✦</b><span>API'S REST</span><b>✦</b>
+                    <span>SOFTWARE</span><b>✦</b><span>FULL STACK</span><b>✦</b><span>WEB DEVELOPMENT</span><b>✦</b>
+                    <span>JAVASCRIPT</span><b>✦</b><span>TYPESCRIPT</span><b>✦</b><span>REACT</span><b>✦</b>
+                    <span>PYTHON</span><b>✦</b><span>PHP</span><b>✦</b><span>MYSQL</span><b>✦</b>
+                    <span>DATABASE</span><b>✦</b><span>FRAMEWORKS</span><b>✦</b><span>API'S REST</span><b>✦</b>
+                </div>
+            </div>
+
+            <section class="section container" id="sobre">
+                <div class="section-label reveal">
+                    <span>01</span>
+                    <p>Sobre mim</p>
+                </div>
+                <div class="about-grid">
+                    <div class="reveal">
+                        <h2>Transformando<br /><span>aprendizado em prática.</span></h2>
+                    </div>
+                    <div class="about-copy reveal">
+                        <p class="lead">
+                            Minha jornada na tecnologia é movida por curiosidade, prática e vontade de construir.
+                            Atualmente curso Engenharia de Software e busco minha primeira oportunidade na área de
+                            tecnologia.
+                        </p>
+                        <p>
+                            Tenho conhecimentos em desenvolvimento web, programação, APIs e bancos de dados. Gosto de
+                            entender como as coisas funcionam e transformar problemas em soluções simples, úteis e bem
+                            organizadas.
+                        </p>
+                        <div class="stats">
+                            <div><strong>01</strong><span>Engenharia de Software</span></div>
+                            <div><strong>∞</strong><span>Vontade de aprender</span></div>
+                            <div><strong>24/7</strong><span>Curiosidade</span></div>
                         </div>
                     </div>
                 </div>
-            </article>
-            <article class="projects">
-                <h1>Projetos</h1>
-                <div id="project-01">
-                    <a href="https://projeto-harley-davidson.vercel.app/" target="_blank">
-                        <img class="project" src="styles/imagens/projetos/projeto-harley-davidson.png" alt="Landing Page">
-                    </a>
-                    <h2>Harley Davidson</h2>
-                    <p>Site de vendas inspirado nas motos Harley-Davidson construído utilizando React.js.</p>
+            </section>
+
+            <section class="section section-dark" id="skills">
+                <div class="container">
+                    <div class="section-label reveal">
+                        <span>02</span>
+                        <p>Skills</p>
+                    </div>
+                    <div class="skills-head reveal">
+                        <h2>Ferramentas para<br /><em>tirar ideias do papel.</em></h2>
+                        <p>Uma base multidisciplinar para atuar no desenvolvimento de soluções digitais.</p>
+                    </div>
+
+                    <div class="skills-grid">
+                        <article class="skill-card reveal">
+                            <span class="skill-number">01</span>
+                            <h3>Frontend</h3>
+                            <p>Interfaces responsivas, acessíveis e com foco em experiência do usuário.</p>
+                            <div><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>TypeScript</span></div>
+                        </article>
+                        <article class="skill-card reveal">
+                            <span class="skill-number">02</span>
+                            <h3>Backend</h3>
+                            <p>Lógica de aplicações, APIs e fundamentos de desenvolvimento server-side.</p>
+                            <div><span>Python</span><span>PHP</span><span>APIs</span><span>POO</span></div>
+                        </article>
+                        <article class="skill-card reveal">
+                            <span class="skill-number">03</span>
+                            <h3>Dados &amp; ferramentas</h3>
+                            <p>Organização de dados e ferramentas que apoiam produtividade e desenvolvimento.</p>
+                            <div><span>MySQL</span><span>Git</span><span>Excel</span><span>Office</span></div>
+                        </article>
+                    </div>
                 </div>
-                <div id="project-02">
-                    <a href="https://devdanilosouza.github.io/Portfolio/Projetos/Calc.js" target="_blank">
-                        <img class="project" src="styles/imagens/projetos/Calc-js.png" alt="Calculadora JavaScript">
-                    </a>
-                    <h2>Calculadora JavaScript</h2>
-                    <p>Calculadora feita com HTML, CSS e JavaScript que realiza todas as operações básicas.</p>
+            </section>
+
+            <section class="section container" id="projetos">
+                <div class="section-label reveal">
+                    <span>03</span>
+                    <p>Projetos</p>
                 </div>
-            </article>
-        </section>
-        <section class="parallax">
-            <span>"Não é a força, mas sim a constância dos bons resultados que conduz os homens à felicidade." - Nietzsche
-            </span>
-        </section>
-        <section id="project-section" class="second-sec">
-            <h1>Outros Projetos</h1>
-            <article class="projects-02">
-                <div class="project-art">
-                    <a href="https://devdanilosouza.github.io/Portfolio/Projetos/Landing Page/" target="_blank">
-                        <img class="project" src="styles/imagens/projetos/landing-page.png" alt="Insights Image">
-                    </a>
-                    <h2>Landing Page</h2>
-                    <p>Landing Page desenvolvida utilizando HTML e CSS, demonstrando meus primeiros resultados no estudo de flexbox.</p>    
+                <div class="projects-heading reveal">
+                    <h2>Projetos que<br /><em>representam meu caminho.</em></h2>
+                    <p>
+                        Alguns projetos pessoais para aplicar conhecimento, experimentar tecnologias e criar produtos
+                        reais.
+                    </p>
                 </div>
-                <div class="project-art">
-                    <a href="https://devdanilosouza.github.io/Portfolio/Projetos/Grid%20Posts/" target="_blank">
-                        <img class="project" src="styles/imagens/projetos/grid-posts.png" alt="Grid Posts Image">
-                    </a>
-                    <h2>Grid Posts</h2>
-                    <p>Layout de Posts feito em HTML e CSS, utilizando display grid, completamente responsivo.</p>
+
+                <div class="projects-list">
+                    <article class="project-card featured reveal">
+                        <div class="project-number">01</div>
+                        <div class="project-info">
+                            <p class="project-type">SAAS · PRODUTIVIDADE</p>
+                            <h3>Lively</h3>
+                            <p>
+                                Uma plataforma de produtividade pensada para organizar tarefas, rotina e tempo, com uma
+                                experiência simples e assistência inteligente.
+                            </p>
+                            <div class="project-tags">
+                                <span>JavaScript</span><span>UI/UX</span><span>AI</span><span>Product</span>
+                            </div>
+                            <a href="#" class="project-link">Ver projeto <span>↗</span></a>
+                        </div>
+                        <div class="project-art lively-art">
+                            <div class="lively-orb"></div>
+                            <span>LIVELY</span>
+                        </div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-number">02</div>
+                        <div class="project-info">
+                            <p class="project-type">WEB · SITE</p>
+                            <h3>Harley-Davidson</h3>
+                            <p>
+                                React, design responsivo e identidade Harley-Davidson em uma experiência moderna, imersiva e otimizada para qualquer tela.
+                            </p>
+                            <div class="project-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span></div>
+                            <a href="https://projeto-harley-davidson.vercel.app" class="project-link" target="_blank">Ver projeto <span>↗</span></a>
+                        </div>
+                        <div class="project-art photo-art"></div>
+                    </article>
+
+                    <article class="project-card reveal">
+                        <div class="project-number">03</div>
+                        <div class="project-info">
+                            <p class="project-type">ESTUDO · FULL STACK</p>
+                            <h3>API &amp; Dashboard</h3>
+                            <p>
+                                Projeto de estudo para praticar integração entre frontend, backend, APIs e banco de
+                                dados.
+                            </p>
+                            <div class="project-tags"><span>TypeScript</span><span>API</span><span>MySQL</span></div>
+                            <a href="#" class="project-link">GitHub <span>↗</span></a>
+                        </div>
+                        <div class="project-art grid-art">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </article>
                 </div>
-                <div class="project-art">
-                    <a href="https://devdanilosouza.github.io/Portfolio/Projetos/To-Do-List/" target="_blank">
-                        <img class="project" src="styles/imagens/projetos/to-do-list.jpg" alt="To-do List">
-                    </a>
-                    <h2>To-do List</h2>
-                    <p>Lista de tarefas desenvolvida com HTML, CSS e JavaScript. Adicione e remova tarefas e marque as concluídas nesta aplicação.</p>
+            </section>
+
+            <section class="section section-dark" id="experiencia">
+                <div class="container">
+                    <div class="section-label reveal">
+                        <span>04</span>
+                        <p>Experiência</p>
+                    </div>
+                    <div class="timeline">
+                        <article class="timeline-item reveal">
+                            <div class="timeline-date">OBJETIVO ATUAL</div>
+                            <div>
+                                <h3>Estágio / Júnior em Tecnologia</h3>
+                                <p>
+                                    Busco uma oportunidade para aplicar meus conhecimentos, aprender com profissionais
+                                    experientes e evoluir como desenvolvedor Full Stack.
+                                </p>
+                            </div>
+                        </article>
+                        <article class="timeline-item reveal">
+                            <div class="timeline-date">EXPERIÊNCIA PROFISSIONAL</div>
+                            <div>
+                                <h3>Assistente de Operações | 2024 - 2026</h3>
+                                <p>
+                                    Experiência com operações logísticas, separação e conferência de produtos e
+                                    atividades administrativas, desenvolvendo organização, responsabilidade, comunicação
+                                    e trabalho em equipe.
+                                </p>
+                            </div>
+                        </article>
+                        <article class="timeline-item reveal">
+                            <div class="timeline-date">EXPERIÊNCIA PROFISSIONAL</div>
+                            <div>
+                                <h3>Auxiliar Administrativo | 2019 - 2020</h3>
+                                <p>
+                                    Experiência em rotinas administrativas, organização, atendimento, controle de documentos, comunicação e trabalho em equipe. Atuação orgulhosa na CocaCola Andina, com grande contribuição para minha formação como profissional.
+                                </p>
+                            </div>
+                        </article>
+                    </div>
                 </div>
-            </article>
-            <a href="projetos.html">- Ver todos os Projetos -</a>
-        </section>
-        <footer class="contact-sec" id="contact-section">
-            <div class="contact-spans">
-                <div class="contact-div">
-                    <a href="https://github.com/DevDaniloSouza" target="_blank"><img class="contact-icons" src="styles/imagens/icons/github-icon.webp" alt="GitHub"></a>
+            </section>
+
+            <section class="section container" id="formacao">
+                <div class="section-label reveal">
+                    <span>05</span>
+                    <p>Formação</p>
                 </div>
-                <div class="contact-div">
-                    <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank"><img id="linkedin" class="contact-icons" src="styles/imagens/icons/linkedin-icon.png" alt="Linkedin"></a>
+                <div class="education reveal">
+                    <div>
+                        <p class="project-type">EM ANDAMENTO</p>
+                        <h2>Engenharia<br />de Software</h2>
+                    </div>
+                    <div class="education-detail">
+                        <span>Graduação</span>
+                        <p>
+                            Formação voltada ao desenvolvimento de software, lógica de programação, engenharia de
+                            sistemas, bancos de dados e fundamentos de tecnologia.
+                        </p>
+                    </div>
                 </div>
-                <div class="contact-div">
-                    <a href="https://www.instagram.com/danilopursino/" target="_blank"><img class="contact-icons" src="styles/imagens/icons/Instagram-Icon.png" alt="Instagram"></a>
+                <div class="courses reveal">
+                    <div><span>CURSO</span><strong>JavaScript Básico</strong><small>Curso em Vídeo</small></div>
+                    <div><span>CURSO</span><strong>Python POO Básico</strong><small>Curso em Vídeo</small></div>
+                    <div>
+                        <span>CONHECIMENTO</span><strong>Excel &amp; Pacote Office</strong
+                        ><small>Nível intermediário</small>
+                    </div>
                 </div>
+            </section>
+
+            <section class="contact-section" id="contato">
+                <div class="container contact-inner reveal">
+                    <p class="eyebrow">06 / CONTATO</p>
+                    <h2>Tem um projeto<br /><em>em mente?</em></h2>
+                    <p>
+                        Estou aberto a oportunidades de estágio, posições júnior, projetos e conexões na área de
+                        tecnologia.
+                    </p>
+                    <a class="contact-email" href="mailto:devdanilosouza@gmail.com"
+                        >devdanilosouza@gmail.com <span>↗</span></a
+                    >
+                    <div class="socials">
+                        <a href="https://github.com/DevDaniloSouza" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        <a href="https://www.linkedin.com/in/devdanilosouza/" target="_blank" rel="noopener noreferrer"
+                            >LinkedIn</a
+                        >
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container footer-inner">
+                <span>© <span id="year"></span> Danilo Souza</span>
+                <span>Feito com código, café e curiosidade.</span>
+                <a href="#home">Voltar ao topo ↑</a>
             </div>
         </footer>
-    </main>
-</body>
+
+        <script src="script/script.js"></script>
+    </body>
 </html>

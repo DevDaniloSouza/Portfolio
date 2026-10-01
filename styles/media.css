@@ -1,104 +1,148 @@
-@media screen and (max-width: 1024px) {
-
-    nav {
-        display: none;
-    }
-    
-    header {
-        height: 26rem;
-    }
-    
-    section.first-sec {
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .about-me {
-        display: flex;
-        justify-content: center;
-    
-        padding: 1rem;
-        width: 90%;
-    }
-    
-    #about {
-        width: 100%;
-        padding: 1rem;
-    }
-    
-    div#tecs {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-    
-    .tecs-rows {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    
-        width: 50%;
-    }
-    
-    .back-tecs {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    
-        margin-bottom: 2rem;
-        width: 6rem;
-        height: 6rem;
-    }
-    
-    .tecs {
-        width: 6rem;
-    }
-    
-    #css {
-        width: 4.5rem;
-    }
-    
-    .projects {
-        padding: 0rem;
-        width: 100%;
-    }
-
-    .projects > h1 {
-        margin: 1rem 0 1.2rem;
-    }
-
-    img.project {
-        width: 65vw;
-    }
-    
-    .parallax {
-        text-align: center;
-        font-size: 1rem;
-        width: 100%;
-
-        background-image: url(imagens/parallax.jpg);
-        background-size: cover;
-        background-attachment: fixed;
-    }
-    
-    .second-sec {
-        width: 100vw;
-        padding-bottom: 0rem;
-    }
-    
-    .projects-02 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    
-        width: 100%;
-        margin: 0 0 0rem 0;
-    }
-    
-    .project-art {
-        margin: 0 0 4rem 0;
-        width: 80vw;
-    }
+@media (pointer: fine) {
+  .cursor-glow {
+    display: block;
+  }
+}
+@media (max-width: 900px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+  .hero-visual {
+    max-width: 650px;
+  }
+  .about-grid,
+  .education {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+  .project-card {
+    grid-template-columns: 35px 1fr;
+  }
+  .project-art {
+    grid-column: 1/-1;
+  }
+  .skills-head,
+  .projects-heading {
+    display: block;
+  }
+  .skills-head p,
+  .projects-heading p {
+    margin-top: 20px;
+  }
+  .timeline-item {
+    grid-template-columns: 170px 1fr;
+    gap: 30px;
+  }
+}
+@media (max-width: 650px) {
+  .container {
+    width: min(100% - 32px, var(--max));
+  }
+  .nav {
+    height: 68px;
+  }
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .menu-toggle span {
+    width: 24px;
+    height: 1px;
+    background: #fff;
+  }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 68px;
+    left: 0;
+    right: 0;
+    padding: 25px 20px;
+    background: #0a0a0a;
+    border-bottom: 1px solid var(--line);
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-links.open {
+    display: flex;
+  }
+  .hero {
+    padding-top: 120px;
+    min-height: auto;
+    padding-bottom: 75px;
+  }
+  .hero h1 {
+    font-size: 58px;
+  }
+  .hero-text {
+    font-size: 15px;
+  }
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .button {
+    justify-content: center;
+  }
+  .hero-meta {
+    gap: 9px;
+  }
+  .section {
+    padding: 90px 0;
+  }
+  .section-label {
+    margin-bottom: 45px;
+  }
+  .about-grid h2 {
+    font-size: 43px;
+  }
+  .stats {
+    grid-template-columns: 1fr;
+  }
+  .skills-head h2,
+  .projects-heading h2 {
+    font-size: 43px;
+  }
+  .skill-card {
+    min-height: 260px;
+  }
+  .project-card {
+    grid-template-columns: 1fr;
+    padding: 24px;
+  }
+  .project-number {
+    display: none;
+  }
+  .project-info h3 {
+    font-size: 39px;
+  }
+  .timeline-item {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .education {
+    padding: 28px;
+  }
+  .courses {
+    grid-template-columns: 1fr;
+  }
+  .contact-section {
+    padding: 105px 0;
+  }
+  .contact-inner h2 {
+    font-size: 59px;
+  }
+  .footer-inner {
+    flex-direction: column;
+  }
+  .visual-note {
+    display: none;
+  }
+  .code-body {
+    font-size: 11px;
+  }
 }
