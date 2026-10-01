@@ -513,7 +513,7 @@ a {
   box-shadow: 0 0 100px 30px rgba(215, 255, 79, 0.15);
 }
 .photo-art {
-  background-image: url(images/harley_project_image.png);
+  background-image: url(imagens/projetos/harley_project_image.png);
   background-size: cover;
 }
 .grid-art {
