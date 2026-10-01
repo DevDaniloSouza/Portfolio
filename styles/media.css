@@ -3,6 +3,112 @@
     display: block;
   }
 }
+@media screen and (max-width: 1024px) {
+  nav,
+  .nav {
+    display: none;
+  }
+
+  header,
+  .site-header {
+    height: 26rem;
+  }
+
+  section.first-sec,
+  .first-sec {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-me,
+  .about-grid {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    width: 90%;
+  }
+
+  #about,
+  .about-section {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  div#tecs,
+  .skills-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .tecs-rows {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+  }
+
+  .back-tecs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    width: 6rem;
+    height: 6rem;
+  }
+
+  .tecs {
+    width: 6rem;
+  }
+
+  #css {
+    width: 4.5rem;
+  }
+
+  .projects,
+  .projects-section {
+    padding: 0;
+    width: 100%;
+  }
+
+  .projects > h1,
+  .projects-heading h2 {
+    margin: 1rem 0 1.2rem;
+  }
+
+  img.project {
+    width: 65vw;
+  }
+
+  .parallax {
+    text-align: center;
+    font-size: 1rem;
+    width: 100%;
+    background-image: url(imagens/parallax.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+  }
+
+  .second-sec {
+    width: 100vw;
+    padding-bottom: 0;
+  }
+
+  .projects-02 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+  }
+
+  .project-art {
+    margin: 0 0 4rem 0;
+    width: 80vw;
+  }
+}
 @media (max-width: 900px) {
   .hero {
     grid-template-columns: 1fr;
@@ -23,7 +129,9 @@
     grid-template-columns: 35px 1fr;
   }
   .project-art {
-    grid-column: 1/-1;
+    grid-column: 1 / -1;
+    margin: 0 0 4rem 0;
+    width: 80vw;
   }
   .skills-head,
   .projects-heading {
@@ -146,3 +254,4 @@
     font-size: 11px;
   }
 }
+
