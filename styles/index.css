@@ -516,6 +516,10 @@ a {
   background-image: url(imagens/projetos/harley_project_image.png);
   background-size: cover;
 }
+.calc-image {
+  background-image: url(imagens/projetos/Calc-js.png);
+  background-size: cover;
+}
 .grid-art {
   grid-template-columns: repeat(2, 1fr);
   gap: 2px;
