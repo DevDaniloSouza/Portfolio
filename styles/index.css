@@ -823,6 +823,10 @@ footer {
   .project-info h3 {
     font-size: 39px;
   }
+  .calc-image {
+  background-image: url(imagens/projetos/Calc-js.png);
+  background-size: cover;
+  }
   .timeline-item {
     grid-template-columns: 1fr;
     gap: 10px;
